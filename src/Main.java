@@ -15,5 +15,10 @@ public class Main {
         neckarLauf.geschwindigkeitInKmH();
         System.out.println(neckarLauf.geschwindigkeitInKmH + " km/h schnell gelaufen");
 
+        LinkedList<PKW> bmws = new LinkedList<>();
+        bmws.add(bmwM8);
+        bmws.add(new PKW(100000, 450, 500));
+        System.out.println(bmws.get(1).kilometerStand);
+
     }
 }
