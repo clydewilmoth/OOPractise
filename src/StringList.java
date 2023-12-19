@@ -3,7 +3,7 @@ public class StringList {
         private String value;
         private Node next;
         public Node(String in){
-            this.value=in;
+            this.value =in;
         }
 
     }
@@ -48,7 +48,7 @@ public class StringList {
         for(int i=0; i<index; i++){
             current=current.next;
         }
-        current.value=null;
+        current.value =null;
     }
 
     public static void main(String[] args) {
