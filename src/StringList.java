@@ -1,9 +1,9 @@
 public class StringList {
     class Node {
-        String input;
-        Node next;
+        private String value;
+        private Node next;
         public Node(String in){
-            this.input=in;
+            this.value=in;
         }
 
     }
@@ -39,7 +39,7 @@ public class StringList {
             current = current.next;
         }
 
-        return current.input;
+        return current.value;
 
     }
     public void remove(int index){
@@ -48,7 +48,7 @@ public class StringList {
         for(int i=0; i<index; i++){
             current=current.next;
         }
-        current.input=null;
+        current.value=null;
     }
 
     public static void main(String[] args) {
